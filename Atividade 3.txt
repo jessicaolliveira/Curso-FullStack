@@ -1,0 +1,26 @@
+create table pessoa(
+pessoa_id int primary key,
+Nome varchar (200) not null,
+CPF varchar (25) not null,
+Idade date,
+Sexo char (1) not null
+);
+
+
+create table endereco(
+endereco_id int primary key,
+Tipo varchar (10) not null,
+Logradouro varchar (250) not null,
+Numero varchar (10) not null,
+complemento varchar (100),
+CEP numeric not null,
+Cidade varchar (250) not null,
+Estado char (2) not null,
+nome int,
+foreign key (nome) references pessoa(pessoa_id)
+);
+
+
+select * from pessoa
+inner join endereco
+on pessoa.pessoa_id = endereco.nome;
