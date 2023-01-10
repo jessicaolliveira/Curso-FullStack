@@ -1,3 +1,4 @@
+
 create table pessoa(
 pessoa_id int primary key,
 Nome varchar (200) not null,
