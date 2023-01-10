@@ -1,0 +1,23 @@
+programa {
+  funcao inicio() {
+  
+		real num1, num2, soma, sub, mult, div
+		
+		escreva ("Calculadora de Operações Básicas")
+		escreva ("\nDigite o primeiro número: ")
+		leia (num1)
+		escreva ("Digite o segundo número: ")
+		leia (num2)
+
+		soma = num1 + num2 
+		sub  = num1 - num2 
+		mult = num1 * num2 
+		div  = num1 / num2 
+
+		escreva ("\nA soma dos números é igual a ", soma) 	
+		escreva ("\nA subtração dos números é igual a ", sub) 		
+		escreva ("\nA multiplicação dos números é igual a ", mult) 	
+		escreva ("\nA divisão dos números é igual a ", div, "\n")
+ 
+  }
+}

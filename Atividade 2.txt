@@ -1,0 +1,15 @@
+programa {
+  funcao inicio() {
+   real moedareal, dolar, cot
+
+  escreva ("Converter Dólar para Real")
+  escreva ("\nDigite o valor a ser convertido: US$ ") 
+  leia (dolar)
+  escreva ("Digite a cotação do dólar hoje: ")
+  leia (cot)
+
+  moedareal = dolar * cot
+
+  escreva ("\nUS$ ", dolar, " convertido para reais totaliza R$ ", moedareal)
+  }
+}
